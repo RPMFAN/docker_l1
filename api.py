@@ -7,11 +7,11 @@ api = Api(app)
 class Observatory(Resource):
     def get(self):
         return {
-            'Galaxies': ['Milkyway', 'Andromeda', 
-            'Large Magellanic Cloud (LMC)']
+            'Home task-10 ': ['Docker', 'Lading', 
+            'Form docker hub!']
         }
 
 api.add_resource(Observatory, '/')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
